@@ -39,6 +39,15 @@ body {
     margin-bottom: 60px;
 }
 
+.ascii-art {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5em;
+    line-height: 1.2;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
 .header h1 {
     font-size: 2em;
     font-weight: 600;
@@ -155,14 +164,25 @@ a.nav-item:hover {
 }
 
 .item-role,
-.item-date {
+.item-date,
+.item-description {
     font-size: 0.95em;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+.item-role {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.item-date {
     color: var(--text-secondary);
-    margin-bottom: 2px;
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 .item-description {
-    font-size: 0.95em;
     color: var(--text-secondary);
     line-height: 1.7;
     margin-top: 8px;
